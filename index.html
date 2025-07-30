@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Linktree | MarcellNW</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid gold;
+      margin-bottom: 20px;
+      animation: popIn 0.8s ease;
+    }
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    p {
+      color: #bbb;
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 30px;
+      max-width: 300px;
+    }
+    .links {
+      width: 100%;
+      max-width: 380px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .links a {
+      background: #111;
+      border: 1px solid gold;
+      color: gold;
+      text-align: center;
+      padding: 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .links a:hover {
+      background: gold;
+      color: #111;
+      transform: scale(1.03);
+    }
+    .links a::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.08);
+      transition: all 0.4s ease;
+    }
+    .links a:hover::after {
+      left: 100%;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://i.imgur.com/Mt8U4oN.png" alt="Foto Profil">
+  <h1>MarcellNW</h1>
+  <p>Creator | Eternal SMP | ML Player | Project Dev</p>
+
+  <div class="links">
+    <a href="https://youtube.com/@eternalsmpserver?si=JZIyCjbq2uZZQJtl" target="_blank" onclick="playClick()">🌟 YouTube Eternal SMP</a>
+    <a href="https://www.tiktok.com/@marcellnw_?_t=ZS-8yRw6Ee4T21&_r=1" target="_blank" onclick="playClick()">🎬 TikTok MarcellNW</a>
+    <a href="https://www.instagram.com/marcellnw_?igsh=bGhsdnQxbHJjbWZ3" target="_blank" onclick="playClick()">📷 Instagram MarcellNW</a>
+    <a href="https://www.tiktok.com/@queennnzme?_t=ZS-8yRwBkvRcyv&_r=1" target="_blank" onclick="playClick()">🎥 TikTok Queennnzme</a>
+    <a href="https://wa.me/6281323146137" target="_blank" onclick="playClick()">💬 WhatsApp Admin</a>
+    <a href="#" onclick="playClick(); alert('ID Mobile Legends: 910136034 (12611)')">🔥 Mobile Legends ID</a>
+    <a href="https://eternalsmp.vercel.app" target="_blank" onclick="playClick()">🌐 Website Eternal SMP</a>
+    <a href="https://altherasmp.vercel.app/page2.html" target="_blank" onclick="playClick()">🛒 AltheraSMP Rank Page</a>
+  </div>
+
+  <footer>
+    &copy; 2025 MarcellNW | All Rights Reserved
+  </footer>
+
+  <!-- Sound Effect -->
+  <audio id="click-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_2504e1b172.mp3?filename=click-124467.mp3"></audio>
+  <script>
+    function playClick() {
+      const audio = document.getElementById("click-sound");
+      audio.volume = 0.5;
+      audio.play();
+    }
+  </script>
+</body>
+  </html>
