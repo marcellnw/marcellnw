@@ -1,8 +1,9 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>marcellnw - Splash</title>
+  <title>Memuat...</title>
   <style>
     * {
       margin: 0;
@@ -10,49 +11,64 @@
       box-sizing: border-box;
     }
     html, body {
-      width: 100%;
       height: 100%;
       overflow: hidden;
+      font-family: 'Arial', sans-serif;
+      background-color: black;
     }
-    video.bg-video {
-      position: absolute;
+    video {
+      position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
       object-fit: cover;
       z-index: -1;
     }
-    .overlay {
+    .loading-text {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 192, 203, 0.3); /* soft pink overlay */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: sans-serif;
-      font-size: 2rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       color: white;
-      animation: fadein 2s ease-in-out;
+      font-size: 2rem;
+      text-shadow: 2px 2px 10px #ffb6f9;
+      animation: fadeIn 1.5s ease-in-out;
     }
-    @keyframes fadein {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
     }
   </style>
-  <script>
-    setTimeout(() => {
-      window.location.href = "page2.html"; // Ganti ke halaman berikutnya
-    }, 3000); // 3 detik
-  </script>
 </head>
 <body>
-  <video class="bg-video" autoplay muted playsinline>
-    <source src="https://raw.githubusercontent.com/marcellnw/marcellnw/main/Pin%20oleh%20Adore%20Silver%20di%20Commissions%20di%202025%20_%20Gambar%20gadis%20kartun%20Animasi%20Menggambar%20gadis.mp4" type="video/mp4" />
+
+  <video id="bgVideo" autoplay muted playsinline>
+    <source src="https://marcellnw.github.io/marcellnw/VN20250802_063418.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video.
   </video>
-  <div class="overlay">Welcome ✨</div>
+
+  <div class="loading-text" id="loadingText">Memuat... 0%</div>
+
+  <script>
+    // Simulasi loading angka hingga 100%
+    let percent = 0;
+    const loadingText = document.getElementById("loadingText");
+    const interval = setInterval(() => {
+      if (percent < 100) {
+        percent++;
+        loadingText.textContent = `Memuat... ${percent}%`;
+      } else {
+        clearInterval(interval);
+      }
+    }, 50); // 0–100% dalam 5 detik
+
+    // Redirect setelah video selesai
+    const video = document.getElementById("bgVideo");
+    video.onended = () => {
+      window.location.href = "page2.html";
+    };
+  </script>
+
 </body>
 </html>
