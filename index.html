@@ -1,28 +1,32 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Althera Pink Landing</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarcellNW - Welcome</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Video Background -->
+  <video id="background-video" autoplay muted playsinline>
+    <source src="https://marcellnw.github.io/marcellnw/PinDown.io_1754068630.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video HTML5.
+  </video>
+
   <!-- Page 1 -->
-  <div id="page1">
-    <video autoplay muted playsinline>
-      <source src="https://github.com/marcellnw/marcellnw/raw/main/PinDown.io_1754068630.mp4" type="video/mp4" />
-      Browser Anda tidak mendukung video ini.
-    </video>
-    <div class="loading-text">Memuat... 100%</div>
-    <button class="transparent-button" onclick="skipToPage2()">Lewati</button>
-  </div>
+  <section id="page1" class="page">
+    <h1>Selamat Datang di MarcellNW</h1>
+    <button class="transparent-btn" onclick="goToPage2()">Masuk</button>
+  </section>
 
   <!-- Page 2 -->
-  <div id="page2">
-    <h1>Selamat Datang di AltheraSMP</h1>
-    <p>Ini adalah halaman kedua setelah video intro selesai.</p>
-    <footer>© 2025 Althera SMP • All Rights Reserved</footer>
-  </div>
+  <section id="page2" class="page" style="background-color: rgba(255, 192, 203, 0.15);">
+    <h2>Ini adalah Halaman Kedua</h2>
+    <p>Konten halaman 2 bisa ditambahkan di sini, misalnya daftar menu, deskripsi, dll.</p>
+    <footer>© 2025 MarcellNW. All Rights Reserved.</footer>
+  </section>
 
   <script src="script.js"></script>
 </body>
