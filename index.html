@@ -3,207 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marcellnw — Links</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Quicksand', sans-serif;
-    }
-
-    body, html {
-      height: 100%;
-      overflow: hidden;
-    }
-
-    #bg-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -2;
-    }
-
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.35);
-      z-index: -1;
-    }
-
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-
-    .container {
-      background: rgba(255, 255, 255, 0.4);
-      backdrop-filter: blur(10px);
-      border-radius: 30px;
-      padding: 30px 20px;
-      max-width: 400px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      animation: fadeIn 1.2s ease-in-out;
-    }
-
-    .profile-img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid white;
-      margin-bottom: 15px;
-      animation: sparkle 3s ease-in-out infinite;
-    }
-
-    h1 {
-      font-size: 24px;
-      font-weight: 600;
-      color: #000;
-    }
-
-    p.bio {
-      margin: 6px 0 20px;
-      font-size: 14px;
-      color: #222;
-    }
-
-    .link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      background: white;
-      color: #000;
-      border-radius: 25px;
-      margin: 10px 0;
-      padding: 12px 16px;
-      font-weight: 600;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.2s ease, background 0.3s ease;
-      animation: slideUp 0.6s ease forwards;
-      opacity: 0;
-    }
-
-    .link:hover {
-      transform: scale(1.05);
-      background: #eee;
-    }
-
-    .link img {
-      width: 20px;
-      margin-right: 10px;
-    }
-
-    .link:nth-of-type(1) { animation-delay: 0.3s; }
-    .link:nth-of-type(2) { animation-delay: 0.6s; }
-    .link:nth-of-type(3) { animation-delay: 0.9s; }
-    .link:nth-of-type(4) { animation-delay: 1.2s; }
-    .link:nth-of-type(5) { animation-delay: 1.5s; }
-    .link:nth-of-type(6) { animation-delay: 1.8s; }
-
-    footer {
-      margin-top: 20px;
-      font-size: 12px;
-      color: #333;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes slideUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes sparkle {
-      0%, 100% {
-        box-shadow: 0 0 10px #bbb;
-      }
-      50% {
-        box-shadow: 0 0 20px #999;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .container {
-        padding: 20px 16px;
-      }
-
-      h1 {
-        font-size: 20px;
-      }
-
-      .link {
-        font-size: 14px;
-      }
-    }
-  </style>
+  <title>Althera Pink Landing</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Video Background -->
-  <video autoplay muted loop id="bg-video">
-    <source src="https://raw.githubusercontent.com/marcellnw/marcellnw/main/PinDown.io_1754068630.mp4" type="video/mp4">
-    Browser tidak mendukung video.
-  </video>
-  <div class="overlay"></div>
-
-  <div class="container">
-    <img class="profile-img" src="https://github.com/marcellnw/marcellnw/blob/main/IMG_20250107_093043_455.webp?raw=true" alt="Profile" />
-    <h1>Marcellnw</h1>
-    <p class="bio">Creator | Eternal SMP | ML Player | Project Dev</p>
-
-    <a class="link" href="https://www.tiktok.com/@marcellnw_?_t=ZS-8yRw6Ee4T21&_r=1" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/000000/tiktok--v1.png"/> TikTok
-    </a>
-    <a class="link" href="https://youtube.com/@eternalsmpserver?si=JZIyCjbq2uZZQJtl" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png"/> YouTube
-    </a>
-    <a class="link" href="https://discord.gg/YCGvq8W3Bp" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/000000/discord-logo.png"/> EternalSMP
-    </a>
-    <a class="link" href="https://discord.gg/u6cS9aZCs7" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/000000/discord-logo.png"/> AltheraSMP
-    </a>
-    <a class="link" href="https://wa.me/6281323146137" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/000000/money.png"/> WhatsApp Admin
-    </a>
-    <a class="link" href="https://eternalsmp.vercel.app" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/000000/paper-plane.png"/> Eternal Website
-    </a>
-
-    <footer>
-      &copy; 2025 <strong>Marcellnw</strong> | All rights reserved.
-    </footer>
+  <!-- Page 1 -->
+  <div id="page1">
+    <video autoplay muted playsinline>
+      <source src="https://github.com/marcellnw/marcellnw/raw/main/PinDown.io_1754068630.mp4" type="video/mp4" />
+      Browser Anda tidak mendukung video ini.
+    </video>
+    <div class="loading-text">Memuat... 100%</div>
+    <button class="transparent-button" onclick="skipToPage2()">Lewati</button>
   </div>
 
-  <!-- Background Music -->
-  <audio autoplay loop hidden>
-    <source src="https://raw.githubusercontent.com/marcellnw/queennnzme/main/%5Bno_copyright_music%5D___coffee_time___cute_vlog_music(128k).mp3" type="audio/mp3">
-  </audio>
+  <!-- Page 2 -->
+  <div id="page2">
+    <h1>Selamat Datang di AltheraSMP</h1>
+    <p>Ini adalah halaman kedua setelah video intro selesai.</p>
+    <footer>© 2025 Althera SMP • All Rights Reserved</footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
