@@ -2,56 +2,208 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Link Marcellnw</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>marcellnw Links</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .container {
+      background: #111;
+      padding: 30px 20px;
+      border-radius: 18px;
+      box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin: 0 auto 16px;
+      box-shadow: 0 4px 12px rgba(255,215,0,0.3);
+      transition: 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 13px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 18px;
+      background: #fff;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(255, 215, 0, 0.2);
+      margin: 10px 0;
+      color: #DAA520;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      justify-content: flex-start;
+      transition: 0.2s;
+    }
+
+    .link-btn i {
+      font-size: 20px;
+      color: #000;
+      width: 28px;
+      text-align: center;
+    }
+
+    .link-btn:hover {
+      background-color: #DAA520;
+      color: #000;
+      transform: scale(1.02);
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .row .link-btn {
+      flex: 1;
+      justify-content: center;
+    }
+
+    .game-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .game-box {
+      flex: 1;
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(255,215,0,0.2);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .game-box:hover {
+      transform: scale(1.02);
+    }
+
+    .game-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .game-label {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: #FFD700;
+      font-weight: bold;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
+
   <div class="container">
+    <img src="https://github.com/marcellnw/marcellnw/blob/main/IMG_20250107_093043_455.webp?raw=true" alt="profile" class="profile-img">
     
-    <div class="link-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046125.png" alt="TikTok" class="icon">
-      <span class="link-text">TikTok</span>
+    <h1>Marcellnw</h1>
+    <p>Creator | EternalSMP | ML Player | Project Dev</p>
+
+    <a class="link-btn" href="https://eternalsmp.vercel.app" target="_blank">
+      <i class="fas fa-globe"></i> Eternal SMP Website
+    </a>
+
+    <div class="row">
+      <a class="link-btn" href="#"><i class="fas fa-cube"></i> CelCelxyh</a>
+      <a class="link-btn" href="#"><i class="fas fa-fire"></i> 910136034</a>
     </div>
 
-    <div class="link-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="icon">
-      <span class="link-text">YouTube</span>
-    </div>
+    <a class="link-btn" href="https://www.instagram.com/marcellnw_" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram marcellnw_
+    </a>
 
-    <div class="link-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="Discord" class="icon">
-      <span class="link-text">EternalSMP</span>
-    </div>
+    <a class="link-btn" href="https://www.tiktok.com/@marcellnw_" target="_blank">
+      <i class="fab fa-tiktok"></i> TikTok marcellnw_
+    </a>
 
-    <div class="link-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="Discord" class="icon">
-      <span class="link-text">AltheraSMP</span>
-    </div>
+    <a class="link-btn" href="https://www.tiktok.com/@queennnzme" target="_blank">
+      <i class="fab fa-tiktok"></i> TikTok queennnzme
+    </a>
 
-    <div class="link-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/2203/2203183.png" alt="Saweria" class="icon">
-      <span class="link-text">Saweria</span>
-    </div>
+    <a class="link-btn" href="https://discord.gg/YCGvq8W3Bp" target="_blank">
+      <i class="fab fa-discord"></i> Discord EternalSMP
+    </a>
 
-    <div class="link-box">
-      <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="NGL" class="icon">
-      <span class="link-text">NGL Ask Me</span>
-    </div>
+    <a class="link-btn" href="https://discord.gg/fDswvcnDfk" target="_blank">
+      <i class="fab fa-discord"></i> Discord AltheraSMP
+    </a>
 
-    <!-- Bagian Game ML dan Minecraft -->
-    <div class="dual-box">
-      <div class="game-card">
-        <img src="https://upload.wikimedia.org/wikipedia/en/8/88/Mobile_Legends_game_logo.png" alt="MLBB">
-        <div class="label">ID ML: 123456789</div>
+    <a class="link-btn" href="https://ngl.link/marcellnw" target="_blank">
+      <i class="fas fa-paper-plane"></i> QnA / NGL
+    </a>
+
+    <!-- Minecraft & ML Card -->
+    <div class="game-row">
+      <div class="game-box" onclick="alert('Gamertag: CelCelxyh')">
+        <img src="https://github.com/marcellnw/marcellnw/blob/main/20250803_131559.png?raw=true" alt="Minecraft">
+        <div class="game-label">CelCelxyh</div>
       </div>
-      <div class="game-card">
-        <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/28/Minecraft_logo.png" alt="Minecraft">
-        <div class="label">Nick: Marcellnw</div>
+      <div class="game-box" onclick="alert('ID ML: 910136034')">
+        <img src="https://github.com/marcellnw/marcellnw/blob/main/20250803_131215.png?raw=true" alt="Mobile Legends">
+        <div class="game-label">910136034</div>
       </div>
     </div>
 
   </div>
+
+  <footer>© 2025 marcellnw</footer>
+
 </body>
 </html>
