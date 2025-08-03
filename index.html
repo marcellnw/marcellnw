@@ -2,49 +2,160 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marcellnw</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>marcellnw</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 420px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 25px 20px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .username {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 20px 0 10px;
+      color: #fff;
+    }
+
+    .link-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      background: white;
+      color: black;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      width: 45%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: flex-start;
+      padding: 12px 16px;
+      border-radius: 14px;
+      background: white;
+      color: #e754ad;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .link-btn i {
+      font-size: 18px;
+      color: black;
+    }
+
+    .link-btn:hover {
+      background: #ffe9f3;
+    }
+
+    .footer {
+      margin-top: 30px;
+      color: #aaa;
+      font-size: 13px;
+    }
+  </style>
 </head>
 <body>
-  <video autoplay loop muted playsinline class="bg-video">
-    <source src="https://github.com/marcellnw/marcellnw/blob/main/PinDown.io_1754068630.mp4" type="video/mp4" />
-  </video>
 
   <div class="container">
-    <img src="https://github.com/marcellnw/marcellnw/blob/main/IMG_20250107_093043_455.webp" alt="Profil" class="profile-img" />
-    <h1>Marcellnw</h1>
-    <p class="subtitle">Creator | EternalSMP | ML Player | Project Dev</p>
 
-    <button class="link-btn">Nama Minecraft: CelCelxyh</button>
-    <button class="link-btn">ID Mobile Legends: 910136034 (12611)</button>
+    <img src="https://github.com/marcellnw/marcellnw/blob/main/IMG_20250107_093043_455.webp?raw=true" alt="Profil" class="profile-img">
 
-<button class="link-btn" onclick="window.open('https://www.tiktok.com/@marcellnw_', '_blank')">
-  <i class="fab fa-tiktok"></i> TikTok
-</button>
+    <div class="username">Marcellnw</div>
+    <div class="desc">Creator | EternalSMP | ML Player | Project Dev</div>
 
-<button class="link-btn" onclick="window.open('https://youtube.com/@yourchannel', '_blank')">
-  <i class="fab fa-youtube"></i> YouTube
-</button>
+    <div class="section-title">Eternal SMP Website</div>
 
-<button class="link-btn" onclick="window.open('https://discord.gg/YCGvq8W3Bp', '_blank')">
-  <i class="fab fa-discord"></i> EternalSMP
-</button>
+    <div class="link-row">
+      <div class="card">Minecraft: CelCelxyh</div>
+      <div class="card">ML ID: 910136034 (12611)</div>
+    </div>
 
-<button class="link-btn" onclick="window.open('https://discord.gg/fDswvcnDfk', '_blank')">
-  <i class="fab fa-discord"></i> AltheraSMP
-</button>
+    <a class="link-btn" href="https://www.instagram.com/marcellnw_" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram marcellnw_
+    </a>
 
-<button class="link-btn" onclick="window.open('https://saweria.co/namamu', '_blank')">
-  <i class="fas fa-money-bill-wave"></i> Saweria
-</button>
+    <a class="link-btn" href="https://www.tiktok.com/@marcellnw_" target="_blank">
+      <i class="fab fa-tiktok"></i> TikTok marcellnw_
+    </a>
 
-<button class="link-btn" onclick="window.open('https://ngl.link/marcellnw', '_blank')">
-  <i class="fas fa-paper-plane"></i> NGL Ask Me
-</button>
+    <a class="link-btn" href="https://www.tiktok.com/@queennnzme" target="_blank">
+      <i class="fab fa-tiktok"></i> TikTok queennnzme
+    </a>
 
-  <div class="footer">
-    &copy; 2025 Marcellnw | All rights reserved
+    <a class="link-btn" href="https://discord.gg/YCGvq8W3Bp" target="_blank">
+      <i class="fab fa-discord"></i> Discord EternalSMP
+    </a>
+
+    <a class="link-btn" href="https://discord.gg/fDswvcnDfk" target="_blank">
+      <i class="fab fa-discord"></i> Discord AltheraSMP
+    </a>
+
+    <a class="link-btn" href="https://ngl.link/marcellnw" target="_blank">
+      <i class="fas fa-paper-plane"></i> QnA / NGL
+    </a>
+
+    <div class="footer">© 2025 marcellnw</div>
+
   </div>
+
 </body>
 </html>
