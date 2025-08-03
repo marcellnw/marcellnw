@@ -76,6 +76,7 @@
       text-decoration: none;
       justify-content: flex-start;
       transition: 0.2s;
+      cursor: pointer;
     }
 
     .link-btn i {
@@ -90,15 +91,12 @@
       transform: scale(1.02);
     }
 
-    .row {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-    }
-
-    .row .link-btn {
-      flex: 1;
-      justify-content: center;
+    .img-toggle {
+      display: none;
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     footer {
@@ -106,7 +104,6 @@
       font-size: 13px;
       color: #aaa;
     }
-
   </style>
 </head>
 <body>
@@ -117,13 +114,24 @@
     <h1>Marcellnw</h1>
     <p>Creator | EternalSMP | ML Player | Project Dev</p>
 
-    <a class="link-btn" href="#"><i class="fas fa-globe"></i> Eternal SMP Website</a>
+    <!-- Eternal SMP -->
+    <a class="link-btn" href="https://eternalsmp.vercel.app" target="_blank">
+      <i class="fas fa-globe"></i> Eternal SMP Website
+    </a>
 
-    <div class="row">
-      <a class="link-btn" href="#"><i class="fas fa-cube"></i> CelCelxyh</a>
-      <a class="link-btn" href="#"><i class="fas fa-fire"></i> 910136034</a>
+    <!-- Minecraft -->
+    <div onclick="toggleImage('minecraft-img')" class="link-btn">
+      <i class="fas fa-cube"></i> Minecraft: CelCelxyh
     </div>
+    <img id="minecraft-img" class="img-toggle" src="https://github.com/marcellnw/marcellnw/blob/main/20250803_131559.png?raw=true" alt="Minecraft Name">
 
+    <!-- Mobile Legend -->
+    <div onclick="toggleImage('ml-img')" class="link-btn">
+      <i class="fas fa-fire"></i> Mobile Legend ID: 910136034
+    </div>
+    <img id="ml-img" class="img-toggle" src="https://github.com/marcellnw/marcellnw/blob/main/20250803_131215.png?raw=true" alt="ML ID">
+
+    <!-- Sosmed -->
     <a class="link-btn" href="https://www.instagram.com/marcellnw_" target="_blank">
       <i class="fab fa-instagram"></i> Instagram marcellnw_
     </a>
@@ -150,6 +158,13 @@
   </div>
 
   <footer>© 2025 marcellnw</footer>
+
+  <script>
+    function toggleImage(id) {
+      const img = document.getElementById(id);
+      img.style.display = img.style.display === "block" ? "none" : "block";
+    }
+  </script>
 
 </body>
 </html>
