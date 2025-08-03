@@ -18,21 +18,31 @@
       background: #000;
       color: #fff;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
+      position: relative;
+      z-index: 1;
       padding: 20px;
     }
 
+    video.bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      opacity: 0.3;
+    }
+
     .container {
-      background: #111;
+      background: rgba(0, 0, 0, 0.7);
       padding: 30px 20px;
       border-radius: 18px;
       box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
       width: 100%;
       max-width: 400px;
       text-align: center;
+      margin: auto;
     }
 
     .profile-img {
@@ -92,17 +102,6 @@
       transform: scale(1.02);
     }
 
-    .row {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-    }
-
-    .row .link-btn {
-      flex: 1;
-      justify-content: center;
-    }
-
     .game-row {
       display: flex;
       justify-content: space-between;
@@ -145,10 +144,16 @@
       margin-top: 30px;
       font-size: 13px;
       color: #aaa;
+      text-align: center;
     }
   </style>
 </head>
 <body>
+
+  <!-- Video Background -->
+  <video autoplay muted loop class="bg-video">
+    <source src="https://github.com/marcellnw/marcellnw/blob/main/PinDown.io_1754068630.mp4?raw=true" type="video/mp4">
+  </video>
 
   <div class="container">
     <img src="https://github.com/marcellnw/marcellnw/blob/main/IMG_20250107_093043_455.webp?raw=true" alt="profile" class="profile-img">
@@ -160,11 +165,19 @@
       <i class="fas fa-globe"></i> Eternal SMP Website
     </a>
 
-    <div class="row">
-      <a class="link-btn" href="#"><i class="fas fa-cube"></i> CelCelxyh</a>
-      <a class="link-btn" href="#"><i class="fas fa-fire"></i> 910136034</a>
+    <!-- Minecraft & Mobile Legends Card -->
+    <div class="game-row">
+      <div class="game-box" onclick="alert('Gamertag: CelCelxyh')">
+        <img src="https://github.com/marcellnw/marcellnw/blob/main/20250803_131559.png?raw=true" alt="Minecraft">
+        <div class="game-label">CelCelxyh</div>
+      </div>
+      <div class="game-box" onclick="alert('ID ML: 910136034')">
+        <img src="https://github.com/marcellnw/marcellnw/blob/main/20250803_131215.png?raw=true" alt="Mobile Legends">
+        <div class="game-label">910136034</div>
+      </div>
     </div>
 
+    <!-- Sosial Media & Lainnya -->
     <a class="link-btn" href="https://www.instagram.com/marcellnw_" target="_blank">
       <i class="fab fa-instagram"></i> Instagram marcellnw_
     </a>
@@ -185,22 +198,14 @@
       <i class="fab fa-discord"></i> Discord AltheraSMP
     </a>
 
+    <!-- Tambahan: Saweria -->
+    <a class="link-btn" href="https://saweria.co/eternalsmp" target="_blank">
+      <i class="fas fa-donate"></i> Dukung via Saweria
+    </a>
+
     <a class="link-btn" href="https://ngl.link/marcellnw" target="_blank">
       <i class="fas fa-paper-plane"></i> QnA / NGL
     </a>
-
-    <!-- Minecraft & ML Card -->
-    <div class="game-row">
-      <div class="game-box" onclick="alert('Gamertag: CelCelxyh')">
-        <img src="https://github.com/marcellnw/marcellnw/blob/main/20250803_131559.png?raw=true" alt="Minecraft">
-        <div class="game-label">CelCelxyh</div>
-      </div>
-      <div class="game-box" onclick="alert('ID ML: 910136034')">
-        <img src="https://github.com/marcellnw/marcellnw/blob/main/20250803_131215.png?raw=true" alt="Mobile Legends">
-        <div class="game-label">910136034</div>
-      </div>
-    </div>
-
   </div>
 
   <footer>© 2025 marcellnw</footer>
