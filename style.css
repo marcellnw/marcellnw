@@ -1,0 +1,98 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Page 1 */
+#page1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#page1 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#page1 .loading-text {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: white;
+  background: rgba(255, 192, 203, 0.3);
+  padding: 8px 20px;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Page 2 */
+#page2 {
+  display: none;
+  padding: 60px 20px;
+  background: #ffe6f0;
+  min-height: 100vh;
+}
+
+#page2 h1 {
+  color: #ff1493;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#page2 p {
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+}
+
+/* Transparent Button */
+.transparent-button {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.transparent-button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffc0cb;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
